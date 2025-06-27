@@ -387,7 +387,7 @@ and a secure, scalable backend.</p>
                         <p>Successfully completed online course with certification from NPTEL.</p>
                         <div class="certification-date">Issued:JAN 2025</div>
                         <div class="project-links">
-                            <a href="https://drive.google.com/file/d/1jS6pVv3Qut7H8kW3Xf50dHM0LdBpqSDl/view?usp=sharing" class="btn btn-small btn-outline" target="_blank">View Certificate 1</a>
+                            <a href="https://drive.google.com/file/d/1jS6pVv3Qut7H8kW3Xf50dHM0LdBpqSDl/view?usp=sharing" class="btn btn-small" target="_blank">View Certificate 1</a>
                             <a href="https://drive.google.com/file/d/1tYjuCEBxHIKOuY8l6z7shk5_oDHDXlf0/view?usp=sharing" class="btn btn-small" target="_blank">View Certificate 2</a>
                         </div>
                     </div>
@@ -443,5 +443,23 @@ and a secure, scalable backend.</p>
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+    </script>
 </body>
 </html>

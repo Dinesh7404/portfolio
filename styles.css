@@ -597,13 +597,9 @@ body {
 /* Contact Section */
 .contact {
     padding: 100px 0;
-    background: #000000;
-    color: var(--text-white);
+    background: var(--bg-primary);
+    color: var(--text-primary);
     text-align: center;
-}
-
-[data-theme="dark"] .contact {
-    background: #000000;
 }
 
 .contact-header {
@@ -620,20 +616,20 @@ body {
 .contact-title {
     font-size: 4rem;
     font-weight: 700;
-    color: white;
+    color: var(--text-primary);
     margin-bottom: 1rem;
 }
 
 .contact-subtitle {
     font-size: 1.5rem;
-    color: #4ade80;
+    color: var(--primary-color);
     margin-bottom: 0.5rem;
     font-weight: 600;
 }
 
 .contact-description {
     font-size: 1.5rem;
-    color: #4ade80;
+    color: var(--primary-color);
     font-weight: 600;
 }
 
@@ -646,8 +642,8 @@ body {
 }
 
 .contact-card {
-    background: #4ade80;
-    color: #1a1a1a;
+    background: var(--primary-color);
+    color: white;
     padding: 1.5rem 3rem;
     border-radius: 15px;
     display: flex;
@@ -661,7 +657,7 @@ body {
 
 .contact-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 20px 40px rgba(74, 222, 128, 0.3);
+    box-shadow: 0 20px 40px rgba(102, 126, 234, 0.3);
 }
 
 .contact-card i {
@@ -681,17 +677,17 @@ body {
     margin-bottom: 2rem;
     font-size: 1.5rem;
     font-weight: 600;
-    color: white;
+    color: var(--text-primary);
 }
 
 .form-arrow {
-    color: #f97316;
+    color: var(--warning-color);
     font-size: 2rem;
     font-weight: bold;
 }
 
 .form-plane {
-    color: #3b82f6;
+    color: var(--accent-color);
     font-size: 1.25rem;
 }
 
@@ -709,32 +705,25 @@ body {
 .simple-contact-form textarea {
     width: 100%;
     padding: 1.25rem;
-    border: 2px solid #333333;
+    border: 2px solid var(--border-color);
     border-radius: 8px;
-    background: #111111;
-    color: white;
+    background: var(--bg-secondary);
+    color: var(--text-primary);
     font-family: inherit;
     font-size: 1rem;
     transition: var(--transition);
 }
 
-[data-theme="dark"] .simple-contact-form input,
-[data-theme="dark"] .simple-contact-form textarea {
-    background: #111111;
-    border-color: #333333;
-    color: white;
-}
-
 .simple-contact-form input::placeholder,
 .simple-contact-form textarea::placeholder {
-    color: #888888;
+    color: var(--text-light);
 }
 
 .simple-contact-form input:focus,
 .simple-contact-form textarea:focus {
     outline: none;
-    border-color: #4ade80;
-    box-shadow: 0 0 0 3px rgba(74, 222, 128, 0.1);
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
 }
 
 .simple-contact-form textarea {
@@ -743,8 +732,8 @@ body {
 }
 
 .submit-btn {
-    background: #4ade80;
-    color: #1a1a1a;
+    background: var(--primary-color);
+    color: white;
     border: none;
     padding: 1.25rem 3rem;
     border-radius: 8px;
@@ -759,9 +748,9 @@ body {
 }
 
 .submit-btn:hover {
-    background: #22c55e;
+    background: #5a6fd8;
     transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(74, 222, 128, 0.3);
+    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
 }
 
 /* Projects Section */
